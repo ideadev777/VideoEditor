@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>887</width>
+    <height>1060</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Movie Missile</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/icon.png</normaloff>:/res/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_vertical">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QWidget" name="w_title" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="2">
+         <widget class="QLabel" name="lbl_title">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Impact</family>
+            <pointsize>24</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+color:red;
+}</string>
+          </property>
+          <property name="text">
+           <string> MOVIEMISSILE</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QGridLayout" name="gridLayout_11">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="horizontalSpacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="tb_exit">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>X</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QToolButton" name="tb_minimize">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>_</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="tb_maximize">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>M</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="CxColorButton" name="tb_logo">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="w_main" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QWidget" name="w_top_center" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="CxVideoPanel" name="w_control" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="leftMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>20</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="CxGraphicsView" name="graphicsView"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QWidget" name="w_top_painter" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="w_top_right_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item row="6" column="0">
+               <widget class="QToolButton" name="tb_mark">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>16</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>MARK</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="Line" name="line_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QToolButton" name="tb_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>16</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>TEXT</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="0">
+               <widget class="Line" name="line_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QToolButton" name="tb_image">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>16</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>BILD</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="7" column="0">
+               <widget class="QWidget" name="w_mark_del" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget{
+background-color:transparent;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_18">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QToolButton" name="tb_delete">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Berlin Sans FB Demi</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Del</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="res.qrc">
+                     <normaloff>:/res/delete.png</normaloff>:/res/delete.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>40</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QWidget" name="w_image_del" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget{
+background-color:transparent;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_20">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QToolButton" name="tb_delete_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Berlin Sans FB Demi</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Del</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="res.qrc">
+                     <normaloff>:/res/delete.png</normaloff>:/res/delete.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>40</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="CxTextDropDownMenu" name="w_text_dropdown" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>150</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QWidget" name="w_text_del" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>150</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>150</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget{
+background-color:transparent;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_19">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_8" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <widget class="QToolButton" name="tb_delete_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>40</x>
+                      <y>0</y>
+                      <width>50</width>
+                      <height>50</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Berlin Sans FB Demi</family>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Del</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="res.qrc">
+                      <normaloff>:/res/delete.png</normaloff>:/res/delete.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QRadioButton" name="rb_flex">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>130</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>FLEX MODE</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btn_item_mode</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QRadioButton" name="rb_black_line">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>130</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>BLACK LINE</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btn_item_mode</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QRadioButton" name="rb_white_line">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>130</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>WHITE LINE</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QToolButton" name="tb_scene_color">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>16</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>COLOR</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QToolButton" name="tb_paint">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>16</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>PAINT</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QWidget" name="w_left" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>270</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="CxLayer" name="lw_layer"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_6" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget
+{
+background-color:transparent;
+
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_15">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="horizontalSpacing">
+               <number>4</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="1">
+               <widget class="QToolButton" name="tb_add_video">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QToolButton:hover {
+    background: #C3C0C3
+}</string>
+                </property>
+                <property name="text">
+                 <string>+</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="res.qrc">
+                  <normaloff>:/res/add_3.png</normaloff>:/res/add_3.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QToolButton" name="tb_delete_video">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QToolButton:hover {
+    background: #C3C0C3
+}</string>
+                </property>
+                <property name="text">
+                 <string>X</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="res.qrc">
+                  <normaloff>:/res/delete_3.png</normaloff>:/res/delete_3.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QWidget" name="widget_10" native="true">
+                <layout class="QGridLayout" name="gridLayout_22">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_2">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>10</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLabel
+{
+background-color:#0086BF;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QToolButton" name="tb_upload_video">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>UPLOAD MP4</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QWidget" name="w_right" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>230</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_27">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="w_create_video_panel" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget
+{
+background-color:transparent;
+
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_21">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="8" column="0">
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>13</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="6" column="0">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>13</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="14" column="0">
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="12" column="0">
+               <widget class="QToolButton" name="tb_show_logo_widget">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>230</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Impact</family>
+                  <pointsize>14</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#535353;
+  padding:3px;
+  border-radius: 0px;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>ADD LOGO</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0">
+               <widget class="CxLayer" name="lw_intro_layer">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>150</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QListWidget
+{
+	background:#EFE4B0;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>13</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="11" column="0">
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>13</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="7" column="0">
+               <widget class="QWidget" name="w_inside_single_image_video" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>200</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget
+{
+background:#fff200;
+}</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_23">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QWidget" name="widget_5" native="true">
+                   <layout class="QGridLayout" name="gridLayout_29">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QWidget" name="widget_12" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_31">
+                       <property name="leftMargin">
+                        <number>10</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>10</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QToolButton" name="tb_single_video_audio">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>1111</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Impact</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::RightToLeft</enum>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                         </property>
+                         <property name="text">
+                          <string>UPLOAD AUDIO . . .</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="res.qrc">
+                           <normaloff>:/images/win/fileopen.png</normaloff>:/images/win/fileopen.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>25</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="checkable">
+                          <bool>false</bool>
+                         </property>
+                         <property name="toolButtonStyle">
+                          <enum>Qt::ToolButtonTextBesideIcon</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QToolButton" name="tb_single_video_image">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Impact</family>
+                           <pointsize>16</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                         </property>
+                         <property name="text">
+                          <string>SELECT IMAGE</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QToolButton" name="tb_single_video_mp4">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Impact</family>
+                           <pointsize>16</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                         </property>
+                         <property name="text">
+                          <string>SELECT MP4-VID</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QToolButton" name="tb_save_single_video">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>35</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Impact</family>
+                           <pointsize>16</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                         </property>
+                         <property name="text">
+                          <string>SAVE</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <layout class="QGridLayout" name="gridLayout_30">
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="CxCustomButton" name="tb_single_image_video">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Impact</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string>1-GRAPHIC VID</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="13" column="0">
+               <widget class="QWidget" name="w_logo_pos" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_24">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="CxLogoListWidget" name="lw_logo_list">
+                   <property name="verticalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOff</enum>
+                   </property>
+                   <property name="horizontalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOn</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QWidget" name="widget_3" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_26">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="horizontalSpacing">
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="1">
+                     <widget class="QToolButton" name="tb_add_logo">
+                      <property name="minimumSize">
+                       <size>
+                        <width>40</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>40</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="res.qrc">
+                        <normaloff>:/res/add_2.png</normaloff>:/res/add_2.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QToolButton" name="tb_logo_save">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Impact</family>
+                        <pointsize>14</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string>SAVE POSITION</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QToolButton" name="tb_delete_logo">
+                      <property name="minimumSize">
+                       <size>
+                        <width>40</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>40</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="res.qrc">
+                        <normaloff>:/res/Actions-remove-icon.png</normaloff>:/res/Actions-remove-icon.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>40</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QWidget" name="w_edit_video" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_28">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>0</number>
+                 </property>
+                 <item row="3" column="0">
+                  <widget class="QToolButton" name="tb_edit_video_freeze">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#DFDFDF;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>EDIT INSIDE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="CxCustomButton" name="tb_show_editvideowidget">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::RightToLeft</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+	stop: 0  rgb(216, 216, 216), stop: 0.4 rgb(155, 155, 155),
+	stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(216, 216, 216));
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QToolButton" name="tb_edit_video_image">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#DFDFDF;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>ADD IMAGE</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QWidget" name="w_intro_layer" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="1">
+                  <widget class="QToolButton" name="tb_remove_intro">
+                   <property name="minimumSize">
+                    <size>
+                     <width>35</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>35</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="res.qrc">
+                     <normaloff>:/res/Actions-remove-icon.png</normaloff>:/res/Actions-remove-icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QToolButton" name="tb_add_intro">
+                   <property name="minimumSize">
+                    <size>
+                     <width>35</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>35</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton
+{
+background:#fff200;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="res.qrc">
+                     <normaloff>:/res/Add-icon.png</normaloff>:/res/Add-icon.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>INTRO</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QWidget" name="widget_13" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_32">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="CxCustomButton" name="tb_create_new_video">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Impact</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#C3C0C3;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>CREATE NEW VIDEO</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="w_res" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>180</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777214</width>
+         <height>180</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="CxTrimmerPanel" name="lbl_trimmer">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="w_control_button" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>25</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QToolButton" name="tb_expand_trimmer">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>...</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="res.qrc">
+                  <normaloff>:/res/expand.png</normaloff>
+                  <normalon>:/res/collapse.png</normalon>:/res/expand.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="CxItemLayer" name="lw_item_layer"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QWidget" name="w_bottom_left" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_7" native="true">
+             <property name="styleSheet">
+              <string notr="true">QWidget
+{
+background-color:transparent;
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QToolButton" name="tb_preview">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>80</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>1111</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Berlin Sans FB Demi</family>
+                  <pointsize>15</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#9B9B9B;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>MARK</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="res.qrc">
+                  <normaloff>:/res/Media-Controls-Play-icon.png</normaloff>
+                  <normalon>:/res/Media-Controls-Pause-icon.png</normalon>:/res/Media-Controls-Play-icon.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>80</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="widget_9" native="true">
+             <property name="styleSheet">
+              <string notr="true">QWidget
+{
+background-color:transparent;
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_25">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QToolButton" name="tb_render">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>160</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>1111</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Impact</family>
+                  <pointsize>22</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QToolButton {
+  border-style:none;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+    
+  border-bottom: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  color:black;
+  background:#9B9B9B;
+  padding:3px;
+  border-radius: 0px;
+}
+QToolButton:pressed {
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+    
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  color:black;
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(216, 216, 216), stop: 0.1 rgb(155, 155, 155),
+                                 stop: 0.5 rgb(155, 155, 155), stop: 1.0 rgb(207, 203, 207));
+  padding:3px;
+  border-radius: 0px;
+}
+
+QToolButton:hover {
+    background: #545454
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>FINALIZE</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="w_footer" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLabel" name="lbl_footer">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Berlin Sans FB Demi</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Copyright © 2020 Tom K.   </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QComboBox" name="cb_theme">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CxColorButton</class>
+   <extends>QToolButton</extends>
+   <header>cxcolorbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>cxgraphicsview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxTextDropDownMenu</class>
+   <extends>QWidget</extends>
+   <header>cxtextdropdownmenu.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CxLayer</class>
+   <extends>QListWidget</extends>
+   <header>cxlayer.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxVideoPanel</class>
+   <extends>QWidget</extends>
+   <header>cxvideopanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CxItemLayer</class>
+   <extends>QListWidget</extends>
+   <header>cxitemlayer.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxTrimmerPanel</class>
+   <extends>QLabel</extends>
+   <header>cxtrimmerpanel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxCustomButton</class>
+   <extends>QToolButton</extends>
+   <header>cxcustombutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CxLogoListWidget</class>
+   <extends>QListWidget</extends>
+   <header>cxlogolistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="btn_item_mode"/>
+ </buttongroups>
+</ui>

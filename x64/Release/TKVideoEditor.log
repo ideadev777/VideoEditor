@@ -1,0 +1,84 @@
+﻿Build started 8/26/2020 5:15:30 AM.
+     1>Project "D:\dev\TKVideoEditor\TKVideoEditor.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.\panel /I.\graphics /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include /I.\include\opencv2 /I.\utils /I.\include\opencv /I.\include /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtMultimediaWidgets /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtMultimedia /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtWidgets /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtNetwork /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtGui /IC:\Qt\Qt5.0.2\5.0.2\msvc2012_64\include\QtCore /Irelease /I. /I"C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /O2 /D _WINDOWS /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_MULTIMEDIA_LIB /D QT_MULTIMEDIAWIDGETS_LIB /D QT_NETWORK_LIB /D QT_NO_DEBUG /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /D QT_WIDGETS_LIB /D UNICODE /D UNICODE /D WIN32 /D WIN32 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt -Zm200 -w34100 -w34189 mainwindow.cpp
+         mainwindow.cpp
+     1>d:\dev\tkvideoeditor\cxpaintseekbar.h(7): warning C4005: 'MOVESTATE' : macro redefinition
+                 d:\dev\tkvideoeditor\common.h(20) : see previous definition of 'MOVESTATE'
+     1>mainwindow.cpp(256): warning C4189: 'selected' : local variable is initialized but not referenced
+     1>mainwindow.cpp(531): warning C4100: 'exitStatus' : unreferenced formal parameter
+     1>mainwindow.cpp(531): warning C4100: 'exitCode' : unreferenced formal parameter
+     1>mainwindow.cpp(548): warning C4100: 'cur' : unreferenced formal parameter
+     1>mainwindow.cpp(598): warning C4100: 'event' : unreferenced formal parameter
+     1>mainwindow.cpp(1214): warning C4189: 'item' : local variable is initialized but not referenced
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:".\..\Bin\\TKVideoEditor.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib /LIBPATH:.\lib qtmain.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5MultimediaWidgets.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5Multimedia.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5Widgets.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5Network.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5Gui.lib C:\Qt\Qt5.0.2\5.0.2\msvc2012_64\lib\Qt5Core.lib libEGL.lib libGLESv2.lib gdi32.lib user32.lib opencv_contrib2410.lib opencv_core2410.lib opencv_gpu2410.lib opencv_highgui2410.lib opencv_imgproc2410.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\..\Bin\TKVideoEditor.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"  /SUBSYSTEM:WINDOWS x64\Release\TKVideoEditor.res
+         x64\Release\common.obj
+         x64\Release\cxborderaniwidget.obj
+         x64\Release\cxcustombutton.obj
+         x64\Release\cxfadebutton.obj
+         x64\Release\cxitemlayer.obj
+         x64\Release\cxlayer.obj
+         x64\Release\cxlogolistwidget.obj
+         x64\Release\cxpaintseekbar.obj
+         x64\Release\cxprogressdlg.obj
+         x64\Release\cxtextdropdownmenu.obj
+         x64\Release\cxtextpopupdlg.obj
+         x64\Release\cxtrimmerpanel.obj
+         x64\Release\cxwhitemodetextbutton.obj
+         x64\Release\moc_cxborderaniwidget.obj
+         x64\Release\moc_cxcustombutton.obj
+         x64\Release\moc_cxfadebutton.obj
+         x64\Release\moc_cxlogolistwidget.obj
+         x64\Release\moc_cxpaintseekbar.obj
+         x64\Release\moc_cxprogressdlg.obj
+         x64\Release\moc_cxtextdropdownmenu.obj
+         x64\Release\moc_cxtextpopupdlg.obj
+         x64\Release\moc_cxtrimmerpanel.obj
+         x64\Release\moc_cxwhitemodetextbutton.obj
+         x64\Release\cxseekcirclepointer.obj
+         x64\Release\cxgraphicsitem.obj
+         x64\Release\cxgraphicsscene.obj
+         x64\Release\cxgraphicsview.obj
+         x64\Release\cximageitem.obj
+         x64\Release\cxmarkitem.obj
+         x64\Release\cxtextitem.obj
+         x64\Release\mygraphicstextitem.obj
+         x64\Release\cxmarkpanel.obj
+         x64\Release\cxtexteditpanel.obj
+         x64\Release\cxvideopanel.obj
+         x64\Release\moc_cxcolorbutton.obj
+         x64\Release\moc_cxgraphicsitem.obj
+         x64\Release\moc_cxgraphicsscene.obj
+         x64\Release\moc_cxgraphicsview.obj
+         x64\Release\moc_cxitemlayer.obj
+         x64\Release\moc_cxmarkpanel.obj
+         x64\Release\moc_cxresizablelabel.obj
+         x64\Release\moc_cxseekcirclepointer.obj
+         x64\Release\moc_cxseekitem.obj
+         x64\Release\moc_cxtexteditpanel.obj
+         x64\Release\moc_cxvideopanel.obj
+         x64\Release\moc_textedit.obj
+         x64\Release\moc_videoplayer.obj
+         x64\Release\cxcolorbutton.obj
+         x64\Release\cxprogresslabel.obj
+         x64\Release\form_video_control.obj
+         x64\Release\qrc_res.obj
+         x64\Release\main.obj
+         x64\Release\mainwindow.obj
+         x64\Release\moc_cxlayer.obj
+         x64\Release\moc_cxprogresslabel.obj
+         x64\Release\moc_form_video_control.obj
+         x64\Release\moc_mainwindow.obj
+         x64\Release\cxresizablelabel.obj
+         x64\Release\cxseekitem.obj
+         x64\Release\textedit.obj
+         x64\Release\videoplayer.obj
+         TKVideoEditor.vcxproj -> D:\dev\TKVideoEditor\.\..\Bin\TKVideoEditor.exe
+     1>Done Building Project "D:\dev\TKVideoEditor\TKVideoEditor.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.75
